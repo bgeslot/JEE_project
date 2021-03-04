@@ -7,7 +7,7 @@
     // Windows load
     $(window).on("load", function() {
         // Site loader Icon
-        
+
         $(".loader-inner").fadeOut();
         $(".loader").delay(200).fadeOut("slow");
     });
