@@ -179,43 +179,18 @@ Created by : mutationthemes
     color: #ff5252;
 }
 
- .main-nav ul li.block-helper:last-child {
-     margin-left: .625rem;
-
-}
  .main-menu li a {
      color: #ffffff;
      position: relative;
      padding:1rem 0;
      margin-right: 0 !important;
 }
- .main-nav li.block-helper span.icon, .main-nav li.block-helper a{
-     cursor: pointer;
-     color: #ff5252 !important;
-     font-size: 1.5rem;
-     opacity: 1 !important;
-}
 
-.block-helper li {
-     position: relative;
-     font-size: 1rem;
-}
- .block-helper li {
-     margin-left: 0;
-}
- .block-helper li a {
-     color: #ff5252;
-}
  .header.switched-header .main-nav li a {
      color: #949494;
 
 }
 
-
- .header.switched-header .block-helper li a {
-     color: #ff5252;
-     opacity: 1;
-}
 
  .welcome-content {
      color: #ffffff;
@@ -390,9 +365,6 @@ h1.medium {
     left: 1px;
     }
 
-    .main-nav li.block-helper:before{
-        content: none;
-    }
 
      .main-nav ul li:last-child{
         border-top: none;
@@ -401,15 +373,6 @@ h1.medium {
 
 
     }
-
-
-      .main-nav li.block-helper{
-        border-top: 1px solid rgba(41,41,41,.1);
-        padding-top: 10px;
-        margin-top: 10px;
-        padding-left: 0;
-    }
-
 
 
     .main-menu li a, .main-nav li span {
@@ -425,15 +388,6 @@ h1.medium {
         padding-bottom: 0;
     }
 
-
-
-.main-nav ul li.block-helper:last-child{
-    margin-left: 0;
-}
-
-.main-nav ul li.block-helper a, .main-nav ul li.block-helper span{
-    padding: 0;
-}
 
     .main-nav ul ul{margin-left: 0;}
     .block-teaser p{font-size: 1.4rem;}
