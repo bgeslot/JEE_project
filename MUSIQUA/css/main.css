@@ -1,30 +1,40 @@
+/*******************************************************/
+/*START TABLE OF CONTENT
+/*******************************************************/
 /*
 
-Mousiqua - Music Band and Musician Bootstrap 4 Template
-Copyright 2018  www.mutationmedia.net
-Created by : mutationthemes
+Project:	Aqura WordPress
+Version:	1.0
+Date: 		26-09-2016
+Author:		Theme - Brothers
 
-*/
+1.0 Home-Shop
+	1.1 Single-Shop
 
-/* Table of Content ==================================================
+2.0 Components
+	2.1 Custom
+	2.2 Home-Star
 
+0.scrollbar
 1.Preloader
-2.Site wrapper
-3.Search form
-4.To the top
-5.About section
-6.Discography section
-7.Band section
-8.Tours section
-9.Gallery section
-10.News section
-11.Contact section
-12.Footer section
-13.Mediaqueries
+2.Welcome Section (general header)
+3. Button navigation for music library
+
+/*******************************************************/
+/*END TABLE OF CONTENT
+/*******************************************************/
 
 
+/*scrollbar style */
+:root{
+  scrollbar-color: #395761 #2E3645 !important;
+  scrollbar-width: thin !important;
+}
 
-/* about the list of songs */
+* {
+  scrollbar-width: thin !important;
+}
+/*end scrollbar style */
 
 /*Preloader*/
  .loader {
@@ -112,6 +122,80 @@ Created by : mutationthemes
 }
 /*End preloader*/
 
+/* Typography and Common style*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h3,
+.h4,
+.h5,
+.h6
+ {
+    font-family: 'Dosis', "Helvetica Neue", "Helvetica", Helvetica, Arial,sans-serif;
+    margin-bottom:.5rem;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 2px;
+    color: #ffffff;
+
+}
+
+h1, .h1{
+     font-size:2.875rem;
+     line-height: 1.2;
+     letter-spacing: 5px;
+}
+
+ h2, .h2 {
+     font-size:2.5rem;
+     line-height: 3rem;
+     letter-spacing: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.span{
+    font-size: .75rem;
+}
+
+.vertical-align {
+    display: -webkit-flex !important;
+    display: -moz-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.container{
+    position:relative;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+}
+
+.padding {
+  padding: 18rem 0;
+}
+/* End typography and common style*/
+
 /* welcome Section*/
  .welcome {
      background: #222222;
@@ -174,69 +258,6 @@ Created by : mutationthemes
      color: #222222;
  }
 
-
- /* Button navigation menu music library */
-
- .button {
-   display: inline-flex;
-   height: 33px;
-   width: 120px;
-   border: 2px solid #BFC0C0;
-   text-transform: uppercase;
-   text-decoration: none;
-   color: white;
-   font-size: .8em;
-   letter-spacing: 1.5px;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
-   position: relative;
-   overflow: hidden;
-   cursor: pointer;
- }
-
-
-
- .header.default a {
-   color: white;
-   text-decoration: none;
- }
-
- .header.switched-header a {
-   color: black;
-   text-decoration: none;
- }
-
- .button a {
-   position: relative;
-   transition: all .45s ease-Out;
- }
-
- #circle {
-   width: 0%;
-   height: 0%;
-   opacity: 0;
-   line-height: 40px;
-   border-radius: 50%;
-   background: #BFC0C0;
-   position: absolute;
-   transition: all .5s ease-Out;
-   top: 20px;
-   left: 70px;
- }
-
- .button:hover #circle {
-   width: 200%;
-   height: 500%;
-   opacity: 1;
-   top: -70px;
-   left: -70px;
- }
-
- .button:hover a {
-   color: #2D3142;
- }
-
  .main-nav li {
      display: inline-block;
      font-size: 1.5rem;
@@ -251,13 +272,12 @@ Created by : mutationthemes
     color: #ff5252;
 }
 
- .main-menu li a {
+.main-menu li a {
      color: #ffffff;
      position: relative;
      padding:1rem 0;
      margin-right: 0 !important;
 }
-
 
 .header.switched-header .main-nav li a {
      color: #949494;
@@ -308,7 +328,6 @@ Created by : mutationthemes
   font-size: 6rem;
 }
 
-
  h1.large {
      font-size: 6rem;
      line-height: 1.5;
@@ -358,548 +377,65 @@ h1.medium {
 }
 /* End welcome Section*/
 
-/*Footer*/
- .footer{
-     background: #ffffff;
-     color: #292929;
+/* Button navigation menu music library */
 
- }
-
- .footer small span {
-     opacity: .5;
- }
- .footer .list-inline-item{
-     position: relative;
+.button {
+  display: inline-flex;
+  height: 33px;
+  width: 120px;
+  border: 2px solid #BFC0C0;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
- .footer .list-inline-item a{
-     color: #292929;
-     opacity: .5;
+
+
+.header.default a {
+  color: white;
+  text-decoration: none;
 }
- .footer .list-inline-item:not(:first-child):after{
-     content: "-";
-     position: absolute;
-     left:-.8125rem;
-     top: .0625rem;
-     opacity: .5;
+
+.header.switched-header a {
+  color: black;
+  text-decoration: none;
 }
- .footer .list-inline-item a:hover{
-     opacity: 1;
+
+.button a {
+  position: relative;
+  transition: all .45s ease-Out;
 }
-/*End footer*/
-/*Media queries*/
-@media all and (max-width: 990px) {
 
-
-    .header .left-part,
-     .header .right-part {
-          float: none;
-          display: block;
-     }
-     .header .left-part {
-          margin-left: 1.857rem;
-     }
-
-     .header {
-          background-color: #ffffff !important;
-
-     }
-     .header .logo {
-          margin-top: 0;
-          color: #222222 !important;
-     }
-
-
-      .header .logo h2 {
-          color: #222222 !important;
-     }
-
-     .main-nav ul {
-    display: none;
-    margin-left: 1.857rem;
-    padding-bottom: .625rem;
+#circle {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #BFC0C0;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
 }
-    .main-nav li {
-        float: none;
-        display: block;
-        margin-left: 0;
-        position: relative;
-        padding-left: 15px;
-    }
 
-   .main-nav li:before {
-    content: "";
-    background-color: #ff5252;
-    height: 1px;
-    width: 6px;
-    position: absolute;
-    top: 11px;
-    left: 1px;
-    }
-
-
-     .main-nav ul li:last-child{
-        border-top: none;
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-
-    .main-menu li a, .main-nav li span {
-        display: inline-block;
-        padding: .2rem 0;
-
-    }
-
-     .main-nav li a {
-     color: #949494 !important;
-}
-    .main-nav li:last-child a {
-        padding-bottom: 0;
-    }
-
-
-    .main-nav ul ul{margin-left: 0;}
-    .block-teaser p{font-size: 1.4rem;}
-
-
-    .main-nav ul ul, .main-nav .dropdown .submenu .submenu  {
-    margin-left: .625em;
-    display: none;
-
-  }
-.main-nav ul li:hover ul {
-  visibility: visible;
+.button:hover #circle {
+  width: 200%;
+  height: 500%;
   opacity: 1;
-  display: block;
+  top: -70px;
+  left: -70px;
 }
 
-.main-nav .dropdown .dropdown:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  display: block;
+.button:hover a {
+  color: #2D3142;
 }
 
-.main-nav ul li:hover .submenu .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.main-nav ul ul li:first-child, .main-nav ul ul li:first-child a {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
-.main-nav ul ul li:last-child, .main-nav ul ul li:last-child a {
-  padding-bottom: 0;
-}
-
-
-.main-nav ul ul {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    background: none;
-    box-shadow: none;
-    top: auto;
-    left: auto;
-    -webkit-transition: none;
-
-
-}
-.main-nav .dropdown .dropdown .submenu {
-    -webkit-transition: none;
-    -webkit-transform: unset
-}
-
-.dropdown .submenu .submenu {
-  left: 0;
-}
-
-.main-nav ul ul li a {
-  padding: 0 ;
-}
-
-}
-
-
-@media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: portrait) {
-    input,
-    textarea {
-        -webkit-appearance: none;
-    }
-}
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
-  .card-gallery.image-gallery > a > img {
-    margin-bottom: .75em;
-}
-
-
-}
-
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)  {
-
-  .card-gallery.image-gallery > a > img {
-    margin-bottom: .75em;
-}
-
-
-h1, .h1{
-     font-size: 2.835rem;
-}
-h3, .h3{
-     font-size: 1rem;
-}
-
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    input,
-    textarea {
-        -webkit-appearance: none;
-    }
-
-      .card-gallery.image-gallery > a > img {
-    margin-bottom: .75em;
-}
-
-     section.about a.btn-primary{display: block;}
-section.about a.btn-primary i{display: none;}
-     .contact .block-social li{
-     margin:0 1.5rem;
-  }
-
-
-  .height-70 {
-    height: 100vh;
-}
-
-
-}
-@media only screen and (min-width: 768px) and (max-width: 960px) {
-    input,
-    textarea {
-        -webkit-appearance: none;
-    }
-
-
-    .header{
-     overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 400px;
-    }
-
-    .sing{max-width: 20%;margin-bottom: 3rem !important;}
-        .card-gallery.image-gallery > a > img {
-    margin-bottom: .75em;
-}
-
-h1.large{font-size: 4rem;}
-
-
-.block-subscribe p{font-size: 1.4rem;}
-
-.height-70 {
-    height: 100vh;
-}
-
-
-
-/*Dropdown*/
-
-.main-nav ul ul, .main-nav .dropdown .submenu .submenu  {
-    margin-left: .625em;
-    display: none;
-
-  }
-.main-nav ul li:hover ul {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav .dropdown .dropdown:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav ul li:hover .submenu .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.main-nav ul ul li:first-child, .main-nav ul ul li:first-child a {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
-.main-nav ul ul li:last-child, .main-nav ul ul li:last-child a {
-  padding-bottom: 0;
-}
-
-
-.main-nav ul ul {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    background: none;
-    box-shadow: none;
-    top: auto;
-    left: auto;
-    -webkit-transition: none;
-
-
-}
-.main-nav .dropdown .dropdown .submenu {
-    -webkit-transition: none;
-    -webkit-transform: unset
-}
-
-.dropdown .submenu .submenu {
-  left: 0;
-}
-
-.main-nav ul ul li a {
-  padding: 0 ;
-}
-
-/*End dropdown*/
-
-}
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    input,
-    textarea {
-        -webkit-appearance: none;
-    }
-
-
-    .header{
-     overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 400px;
-    }
-
-
-    .back-rect, .front-rect{display: none;}
-    h1.large{font-size: 4rem;}
-
-
-      .height-70 {
-    height: 100vh;
-}
-
-.sing{margin-bottom: 3rem !important;max-width: 25%;}
-
-
-    .card-gallery.image-gallery{
-
-    column-count: 1;
-    column-gap: 0rem;
-    }
-
-
-
-    .card-gallery.image-gallery > a > img{margin-bottom: 1rem;}
-
-
-    .comment .comment-avatar, .comment .comment-body{
-     float: none;
-     width: auto;
-    }
-
-
-      .comment .comment-body{
-     margin-top: 1rem;
-    }
-
-
-    /*Dropdown*/
-.main-nav ul ul, .main-nav .dropdown .submenu .submenu  {
-    margin-left: .625em;
-    display: none;
-
-  }
-.main-nav ul li:hover ul {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav .dropdown .dropdown:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav ul li:hover .submenu .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.main-nav ul ul li:first-child, .main-nav ul ul li:first-child a {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
-.main-nav ul ul li:last-child, .main-nav ul ul li:last-child a {
-  padding-bottom: 0;
-}
-
-
-.main-nav ul ul {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    background: none;
-    box-shadow: none;
-    top: auto;
-    left: auto;
-    -webkit-transition: none;
-
-
-}
-.main-nav .dropdown .dropdown .submenu {
-    -webkit-transition: none;
-    -webkit-transform: unset
-}
-
-.dropdown .submenu .submenu {
-  left: 0;
-}
-
-.main-nav ul ul li a {
-  padding: 0 ;
-}
-
-/*End dropdown*/
-
-
-}
-@media only screen and (max-width: 479px) {
-    input,
-    textarea {
-        -webkit-appearance: none;
-    }
-
-
-    .header{
-     overflow-y: scroll;
-    overflow-x: hidden;
-    max-height: 400px;
-    }
-
-    .back-rect, .front-rect{display: none;}
-    h1.large{font-size: 3rem;}
-
-    .playlist li .col-lg-6 span,.block-tab .col-lg-4 span{margin-bottom: 1rem;display: block;}
-    .sing{margin-bottom: 3rem !important;max-width: 40%;}
-    section.about .block-content.text-md-right, .block-album {margin-bottom: 1.875em;}
-
-
-    .card-gallery.image-gallery{
-
-    column-count: 1;
-    column-gap: 0rem;
-    }
-
-    .block-subscribe:before{right: 1.75rem;}
-    .block-subscribe p{font-size: 1.4rem;}
-
-
-
-    .card-gallery.image-gallery > a > img{margin-bottom: 1rem;}
-
-      .height-70 {
-    height: 100vh;
-}
-
-.block-tracklist .block-content img{
-     display: none;
-}
-
-.block-title:before{content:none;}
-.news-list > li, .news-list li:last-child{margin-bottom: 5rem;}
-
-
-    .comment .comment-avatar, .comment .comment-body{
-     float: none;
-     width: auto;
-    }
-
-
-      .comment .comment-body{
-     margin-top: 1rem;
-    }
-
-
-    /*Dropdown*/
-
-  .main-nav ul ul, .main-nav .dropdown .submenu .submenu  {
-    margin-left: .625em;
-    display: none;
-
-  }
-.main-nav ul li:hover ul {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav .dropdown .dropdown:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-.main-nav ul li:hover .submenu .submenu {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-.main-nav ul ul li:first-child, .main-nav ul ul li:first-child a {
-  padding-top: 0;
-  margin-top: 0;
-}
-
-
-.main-nav ul ul li:last-child, .main-nav ul ul li:last-child a {
-  padding-bottom: 0;
-}
-
-
-.main-nav ul ul {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    background: none;
-    box-shadow: none;
-    top: auto;
-    left: auto;
-    -webkit-transition: none;
-
-
-}
-.main-nav .dropdown .dropdown .submenu {
-    -webkit-transition: none;
-    -webkit-transform: unset
-}
-
-.dropdown .submenu .submenu {
-  left: 0;
-}
-
-.main-nav ul ul li a {
-  padding: 0 ;
-}
-
-/*End dropdown*/
-
-}
-/*End media queries*/
+/*end button navigation */
