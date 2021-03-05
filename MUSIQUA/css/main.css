@@ -137,12 +137,21 @@ Created by : mutationthemes
      float: left;
      margin-left: 3.125rem;
 }
+
+.header .middle-part{
+  width: 400px;
+  position: absolute;
+  left: 37%;
+  top:20%;
+}
+
  .header .right-part {
      float: right;
      margin: 0.6rem;
      margin-right: 3.125rem;
      position: relative;
 }
+
  .header.switched-header {
      background-color: #ffffff;
      left: 0;
@@ -151,6 +160,7 @@ Created by : mutationthemes
      width: 100%;
      z-index: 1040;
 }
+
  .header .logo {
      display: inline-block;
 }
@@ -164,6 +174,60 @@ Created by : mutationthemes
      color: #222222;
  }
 
+
+ /* Button navigation menu music library */
+
+ .button {
+   display: inline-flex;
+   height: 33px;
+   width: 120px;
+   border: 2px solid #BFC0C0;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: .8em;
+   letter-spacing: 1.5px;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+ }
+
+ a {
+   text-decoration: none;
+   letter-spacing: 1px;
+ }
+
+ .button a {
+   position: relative;
+   transition: all .45s ease-Out;
+ }
+
+ #circle {
+   width: 0%;
+   height: 0%;
+   opacity: 0;
+   line-height: 40px;
+   border-radius: 50%;
+   background: #BFC0C0;
+   position: absolute;
+   transition: all .5s ease-Out;
+   top: 20px;
+   left: 70px;
+ }
+
+ .button:hover #circle {
+   width: 200%;
+   height: 500%;
+   opacity: 1;
+   top: -70px;
+   left: -70px;
+ }
+
+ .button:hover a {
+   color: #2D3142;
+ }
 
  .main-nav li {
      display: inline-block;
@@ -370,8 +434,6 @@ h1.medium {
         border-top: none;
         padding-top: 0;
         margin-top: 0;
-
-
     }
 
 
