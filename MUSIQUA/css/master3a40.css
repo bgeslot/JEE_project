@@ -925,16 +925,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-sm-8 {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 @media (min-width: 800px) {
   .container {
     width: 750px;

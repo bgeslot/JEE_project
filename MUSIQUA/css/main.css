@@ -179,9 +179,6 @@ h7 {
     -webkit-justify-content: center;
 }
 
-.container{
-    position:relative;
-}
 
 a,
 a:hover,
@@ -544,3 +541,27 @@ table tr th:nth-child(3){
 /***********************************************************************************************/
 /* END TABLE EVENTS */
 /***********************************************************************************************/
+
+.container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-sm-8 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding-no-title{
+  padding: 12rem 0;
+}
+
+.footer.bottom{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#eeeeee;
+}
