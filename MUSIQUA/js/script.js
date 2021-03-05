@@ -19,11 +19,11 @@
         pos = header.offset();
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > pos.top + 500 && header.hasClass('default')) {
+        if ($(this).scrollTop() > pos.top + 100 && header.hasClass('default')) {
             header.fadeOut('fast', function() {
                 $(this).removeClass('default').addClass('switched-header').fadeIn(200);
             });
-        } else if ($(this).scrollTop() <= pos.top + 500 && header.hasClass('switched-header')) {
+        } else if ($(this).scrollTop() <= pos.top + 100 && header.hasClass('switched-header')) {
             header.fadeOut('fast', function() {
                 $(this).removeClass('switched-header').addClass('default').fadeIn(100);
             });

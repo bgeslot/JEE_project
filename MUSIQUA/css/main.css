@@ -125,15 +125,7 @@ Author:		Theme - Brothers
 /* Typography and Common style*/
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 .h1,
-.h3,
-.h4,
-.h5,
-.h6
  {
     font-family: 'Dosis', "Helvetica Neue", "Helvetica", Helvetica, Arial,sans-serif;
     margin-bottom:.5rem;
@@ -154,6 +146,14 @@ h1, .h1{
      font-size:2.5rem;
      line-height: 3rem;
      letter-spacing: 5px;
+}
+
+h7 {
+  text-decoration: none;
+  color: #757575;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .uppercase {
@@ -439,3 +439,108 @@ h1.medium {
 }
 
 /*end button navigation */
+
+/***********************************************************************************************/
+/* START TABLE EVENTS */
+/***********************************************************************************************/
+.tableEvents table {
+  width: 100%;
+  /*autowidth table*/
+  table-layout : fixed;
+}
+/*adjust manually the width for the 1st,2sd and 3rd columns.*/
+table tr th:nth-child(1){
+       width: 40px;
+}
+
+table tr th:nth-child(2){
+       width: 50px;
+}
+table tr th:nth-child(3){
+       width: 300px;
+}
+
+.tableEvents table tr:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tableEvents table td {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d8d8d8;
+  font-family: 'Montserrat', sans-serif;
+}
+.tableEvents table td a {
+  text-decoration: none;
+  color: #757575;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.tableEvents table td a:hover {
+  color: #757575;
+}
+
+.tableEvents table th {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #525252;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+}
+.tableEvents table .aqura-vip a,
+.tableEvents table .aqura-tickets a {
+  padding: 0.4rem 1.5rem;
+  border-radius: 1.3rem;
+  width: 60px;
+  display: inline-block;
+}
+.tableEvents table .aqura-vip {
+  text-align: center;
+}
+.tableEvents table .aqura-vip a {
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  color: #fff;
+  background-color: #000;
+}
+.tableEvents table .aqura-vip a:hover {
+  color: #fff;
+  background: #bb9b69;
+}
+.tableEvents table .aqura-tickets {
+  text-align: left;
+}
+.tableEvents table .aqura-tickets a {
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.tableEvents table .aqura-tickets a:hover {
+  color: #fff;
+  background: #bb9b69;
+}
+.tableEvents table .tickets {
+  text-align: center;
+  width: 5%;
+}
+.tableEvents table td.aqura-tickets {
+  text-align: center;
+  width: 70px;
+}
+
+/***********************************************************************************************/
+/* END TABLE EVENTS */
+/***********************************************************************************************/
