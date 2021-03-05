@@ -150,7 +150,8 @@ h1, .h1{
 
 h7 {
   text-decoration: none;
-  color: #757575;
+  /*color: #757575;*/
+  color: black;
   font-family: 'Karla', sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -481,10 +482,10 @@ table tr th:nth-child(3){
   font-weight: 700;
   text-transform: uppercase;
   color: #525252;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 1.5rem 0;
   border-top: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
+  border-bottom: 2px solid #d8d8d8;
 }
 .tableEvents table .aqura-vip a,
 .tableEvents table .aqura-tickets a {
