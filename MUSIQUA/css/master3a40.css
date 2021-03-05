@@ -7583,7 +7583,7 @@ html body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk.html) no-repeat center center;
+  background: url(../assets/img/content/disk.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon1 .disk {
@@ -7595,7 +7595,7 @@ html body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk1.html) no-repeat center center;
+  background: url(../assets/img/content/disk1.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon2 .disk {
@@ -7607,7 +7607,7 @@ html body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk2.html) no-repeat center center;
+  background: url(../assets/img/content/disk2.png) no-repeat center center;
   z-index: 9;
 }
 .list-albums .list-feature li .albumIcon3 .disk {
@@ -7619,7 +7619,7 @@ html body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/content/disk3.html) no-repeat center center;
+  background: url(../assets/img/content/disk3.png) no-repeat center center;
   z-index: 9;
 }
 @media only screen and (max-width: 1025px) {
@@ -7643,6 +7643,7 @@ html body {
     overflow: hidden;
   }
 }
+/* This gives the transition effect to each album cover and disk popping out*/
 @media only screen and (min-width: 1170px) {
   .list-albums .list-feature li:hover .album-icon {
     width: 270px;
