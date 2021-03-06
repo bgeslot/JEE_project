@@ -1483,6 +1483,7 @@ a #add_playlist{
   border-left-color: transparent;
   border-color: rgba(255,255,255,.07);
   padding: 0.2875rem 0.55rem;
+  color: #BFC0C0;
 }
 
 #add_playlist:hover{
