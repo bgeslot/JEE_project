@@ -1473,6 +1473,34 @@ img:hover {
     background-color: rgb(255, 255, 255, .8);
 }
 
+a #add_playlist{
+  color: black;
+  font-size: 200px;
+  border: 2px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-color: rgba(255,255,255,.07);
+  padding: 0.2875rem 0.55rem;
+}
+
+#add_playlist:hover{
+  color: white;
+}
+
+.col_playlist{
+  width: 25%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  float: none;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  table-layout : fixed;
+}
 .footer.bottom{
   position: fixed;
   left: 0;
