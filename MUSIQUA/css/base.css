@@ -9,106 +9,7 @@
 
 /* Reset & Basics (Inspired by E. Meyers) */
 
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    text-decoration: none;
-}
+
 article,
 aside,
 details,
@@ -150,12 +51,7 @@ a:focus {
 }
 
 
-img {
-    display: inline-block;
-    vertical-align: middle;
-    height: auto;
-    max-width: 100%;
-}
+
 .map img {
     max-width: none;
 }
@@ -212,7 +108,7 @@ h6,
     position: relative;
     letter-spacing: 2px;
     color: #ffffff;
-    
+
 }
 
 h1, .h1{
@@ -331,7 +227,7 @@ form{
 
 em {
     margin-bottom: .5rem;
-    
+
 }
 
 .w-93{
@@ -367,12 +263,7 @@ section,
     width: 100%;
 }
 
-.block-content {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: .3125rem;
-}
+
 
 .front-p {
     position: relative;
@@ -407,18 +298,7 @@ section,
 }
 
 
-img {
-    margin-bottom: 1rem;
-    display: block;
-}
 
-img.animated{
-    -webkit-transform: translateX(-10px) translateZ(0);
-    transform: translateX(-10px) translateZ(0);
-    transition: .45s ease;
-    width: calc(100% + 10px);
-    max-width: initial;
-}
 
 
 img:hover{
@@ -510,10 +390,7 @@ input[type]:-moz-placeholder {
 
 /*Links*/
 
-a.link{
-    margin-bottom: 1rem;
-    display: block;
-}
+
 .as-link{
     cursor: pointer;
 }
@@ -601,11 +478,6 @@ p a.link{
 section.divider{
     padding-top: 12rem;
     padding-bottom: 12rem;
-}
-
-section.main{
-    padding-top: 7.42857rem;
-    padding-bottom: 7.42857rem;
 }
 
 
