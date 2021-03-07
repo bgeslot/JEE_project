@@ -400,13 +400,6 @@ button, input{
 	text-decoration: none;
 }
 
-*, ::before, ::after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-}
-
 .header .left-part {
 	float: left;
 	margin-left: 3.125rem;
