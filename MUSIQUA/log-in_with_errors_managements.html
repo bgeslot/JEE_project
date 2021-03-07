@@ -4,26 +4,6 @@
 </head>
 <body>
 
-  <!--Header-->
-
-  <header class="header default">
-    <div class=" left-part">
-      <a class="logo scroll" href="index.html">
-        <h2 class="mb-0 uppercase">musiqua.</h2>
-      </a>
-    </div>
-    <div class="right-part">
-      <nav class="main-nav">
-        <ul class="main-menu list-inline">
-          <li><a class="scroll list-inline-item" href="index.html">Home</a></li>
-          <li class="block-helper">
-            <a href="#" class="scroll"><span><i class="icon-user"></i></span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
   <div class="content">
     <div class="row">
       <div class="col-xs-12">
@@ -57,28 +37,32 @@
 
     <form name="$parent.accounts" method="post" novalidate="" class="ng-pristine ng-valid-sp-disallow-chars ng-invalid ng-invalid-required">
 
-      <div class="row">
+      <div class="row" ng-class="{'has-error': (accounts.username.$dirty &amp;&amp; accounts.username.$invalid) || invalidCredentials}">
         <div class="col-xs-12">
           <label for="login-username" class="control-label ng-binding">
             Email address or username
           </label>
-          <input ng-model="form.username" type="text" class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched" name="username" id="login-username" placeholder="Email address or username" required="" sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars" autocapitalize="off">
+          <input ng-model="form.username" type="text" class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched" name="username" id="login-username" placeholder="Email address or username" required="" sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="autofocus" ng-trim="false" ng-change="onInputChange()">
+          <!-- ngIf: accounts.username.$dirty && accounts.username.$invalid -->
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" ng-class="{'has-error': (accounts.password.$dirty &amp;&amp; accounts.password.$invalid) || invalidCredentials}">
         <div class="col-xs-12">
           <label for="login-password" class="control-label ng-binding">
             Password
           </label>
-          <input ng-model="form.password" type="password" class="form-control input-with-feedback ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="password" id="login-password" placeholder="Password" required="" autocomplete="off">
+          <input ng-model="form.password" type="password" class="form-control input-with-feedback ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="password" id="login-password" placeholder="Password" required="" autocomplete="off" ng-trim="false" ng-change="onInputChange()">
+          <!-- ngIf: accounts.password.$dirty && accounts.password.$invalid -->
         </div>
       </div>
+
+
 
       <div class="row password-reset">
         <div class="col-xs-12">
           <p>
-            <a id="reset-password-link" class="ng-binding" href="https://www.spotify.com/password-reset/">Forgot your password?</a>
+            <a id="reset-password-link" ng-href="https://www.spotify.com/password-reset/" analytics-on="click" analytics-category="Login View" analytics-event="Forgot Button" analytics-label="" class="ng-binding" href="https://www.spotify.com/password-reset/">Forgot your password?</a>
           </p>
         </div>
       </div>
@@ -87,7 +71,7 @@
         <div class="col-xs-12 col-sm-6">
           <div class="checkbox">
             <label class="ng-binding">
-              <input ng-model="form.remember" type="checkbox" name="remember" id="login-remember" class="ng-pristine ng-untouched ng-valid ng-not-empty">
+              <input ng-model="form.remember" type="checkbox" name="remember" analytics-on="checked" analytics-category="Login View" id="login-remember" class="ng-pristine ng-untouched ng-valid ng-not-empty">
               Remember me
               <span class="control-indicator"></span>
             </label>
@@ -102,31 +86,34 @@
     <div id="sign-up-section">
       <div class="row">
         <div class="col-xs-12">
-          <signup class="ng-isolate-scope">
-            <div ng-if="showSignup" class="ng-scope">
-              <div ng-if="showButton" class="ng-scope">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="divider">
-                    </div>
-                  </div>
-                </div>
-                <div class="row text-center mt-0">
-                  <h2 class="h4 ng-binding">Don't have an account?</h2>
-                </div>
-                <div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a id="sign-up-link" class="btn btn-block btn-default ng-binding" role="button" href="#">Sign up for Spotify</a>
-                    </div>
-                  </div>
+          <signup class="ng-isolate-scope"><!-- ngIf: showSignup --><div ng-if="showSignup" class="ng-scope">
+            <!-- ngIf: showButton --><div ng-if="showButton" class="ng-scope">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="divider">
+                  <!-- ngIf: showOrLabel -->
                 </div>
               </div>
             </div>
-          </signup>
-        </div>
-      </div>
+            <div class="row text-center mt-0">
+              <h2 class="h4 ng-binding">Don't have an account?</h2>
+            </div>
+            <div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a id="sign-up-link" ng-href="/en/login/signup?continue=https%3A%2F%2Faccounts.spotify.com%2Fen%2Fstatus" class="btn btn-block btn-default ng-binding" role="button" href="/en/login/signup?continue=https%3A%2F%2Faccounts.spotify.com%2Fen%2Fstatus">Sign up for Spotify</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- end ngIf: showButton -->
+
+          <!-- ngIf: showAppStoreBanner -->
+        </div><!-- end ngIf: showSignup -->
+      </signup>
     </div>
   </div>
+</div>
+
+</div>
 </body>
 </html>
