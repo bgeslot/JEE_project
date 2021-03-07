@@ -1,15 +1,23 @@
 <html>
 <head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <title>Musiqua</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Css -->
   <link rel='stylesheet'  href='css/login.css' type='text/css' media='all' />
+  <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+
 </head>
 <body>
 
   <!--Header-->
-
   <header class="header default">
     <div class=" left-part">
       <a class="logo scroll" href="index.html">
-        <h2 class="mb-0 uppercase">musiqua.</h2>
+        <h1 class="mb-0 uppercase">musiqua.</h1>
       </a>
     </div>
     <div class="right-part">
@@ -24,109 +32,97 @@
     </div>
   </header>
 
-  <div class="content">
-    <div class="row">
-      <div class="col-xs-12">
-        <a ng-href="https://www.facebook.com/v7.0/dialog/oauth?client_id=174829003346&amp;state=AQAAq8DAtxm7XR%2Bd%2BwhzTskkyos7H%2Fqoi%2F2YgXdyJPco0G95bAmU4htnqVe26wXwtGDjM2at4023VuuDCaqBlYvJYjo8mMDmN81k%2FWH0s2%2BsPYm%2FjNDijTKKGKv1Giz2YCyNWmBCYwmYkD1V5nw%3D&amp;redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Ffacebook%2Fredirect" class="btn btn-block btn-facebook ng-binding" target="_parent" role="button">
+<section>
+  <div class="content_log_in">
+    <div class="row_log_in">
+      <div class="col_log_in">
+        <a href="#" class="btn btn-block btn-facebook" role="button">
           Continue with Facebook
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <a ng-href="https://appleid.apple.com/auth/authorize?client_id=com.spotify.accounts&amp;response_type=code&amp;response_mode=form_post&amp;scope=name%20email&amp;state=AQAAq8DAtxm7XR%2Bd%2BwhzTskkyos7H%2Fqoi%2F2YgXdyJPco0G95bAmU4htnqVe26wXwtGDjM2at4023VuuDCaqBlYvJYjo8mMDmN81k%2FWH0s2%2BsPYm%2FjNDijTKKGKv1Giz2YCyNWmBCYwmYkD1V5nw%3D&amp;redirect_uri=https%3A%2F%2Faccounts.spotify.com%2Flogin%2Fapple%2Fredirect" class="btn btn-block btn-black btn-apple ng-binding" target="_parent" role="button">
+    <div class="row_log_in">
+      <div class="col_log_in">
+        <a href="#" class="btn btn-block btn-black btn-apple" role="button">
           Continue with Apple
         </a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12">
-        <a class="btn btn-block btn-default btn-google ng-binding" target="_parent" role="button">
+    <div class="row_log_in">
+      <div class="col_log_in">
+        <a class="btn btn-block btn-default btn-google" role="button">
           Continue with Google
         </a>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="divider">
-          <strong class="divider-title ng-binding">or</strong>
+    <div class="row_log_in">
+      <div class="col_log_in">
+        <div class="divider_login">
+          <strong class="divider_login-title">or</strong>
         </div>
       </div>
     </div>
 
-    <form name="$parent.accounts" method="post" novalidate="" class="ng-pristine ng-valid-sp-disallow-chars ng-invalid ng-invalid-required">
+    <form method="post" novalidate="" class="">
 
-      <div class="row">
-        <div class="col-xs-12">
-          <label for="login-username" class="control-label ng-binding">
-            Email address or username
+      <div class="row_log_in">
+        <div class="col_log_in">
+          <label for="login-username" >
+            Email address
           </label>
-          <input ng-model="form.username" type="text" class="form-control input-with-feedback ng-pristine ng-valid-sp-disallow-chars ng-empty ng-invalid ng-invalid-required ng-touched" name="username" id="login-username" placeholder="Email address or username" required="" sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars" autocapitalize="off">
+          <input type="text" class="form-control" name="username" id="login-username" placeholder="Email address or username" required="" sp-disallow-chars=":%&amp;'`´&quot;" sp-disallow-chars-model="usernameDisallowedChars" autocapitalize="off">
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-12">
-          <label for="login-password" class="control-label ng-binding">
+      <div class="row_log_in">
+        <div class="col_log_in">
+          <label for="login-password" >
             Password
           </label>
-          <input ng-model="form.password" type="password" class="form-control input-with-feedback ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" name="password" id="login-password" placeholder="Password" required="" autocomplete="off">
+          <input type="password" class="form-control" name="password" id="login-password" placeholder="Password" required="" autocomplete="off">
         </div>
       </div>
 
-      <div class="row password-reset">
-        <div class="col-xs-12">
+      <div class="row_log_in">
+        <div class="col_log_in">
           <p>
-            <a id="reset-password-link" class="ng-binding" href="https://www.spotify.com/password-reset/">Forgot your password?</a>
+            <a id="reset-password" href="#">Forgot your password?</a>
           </p>
         </div>
       </div>
 
-      <div class="row row-submit">
-        <div class="col-xs-12 col-sm-6">
-          <div class="checkbox">
-            <label class="ng-binding">
-              <input ng-model="form.remember" type="checkbox" name="remember" id="login-remember" class="ng-pristine ng-untouched ng-valid ng-not-empty">
-              Remember me
-              <span class="control-indicator"></span>
-            </label>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <button class="btn btn-block btn-green ng-binding" id="login-button" ng-click="onLoginClick($event)">Log In</button>
+      <div class="row_log_in">
+        <div class="col-sm-log-in">
+          <button class="btn btn-block btn-green" id="login-button">Log In</button>
         </div>
       </div>
     </form>
 
     <div id="sign-up-section">
-      <div class="row">
-        <div class="col-xs-12">
-          <signup class="ng-isolate-scope">
-            <div ng-if="showSignup" class="ng-scope">
-              <div ng-if="showButton" class="ng-scope">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div class="divider">
-                    </div>
-                  </div>
-                </div>
-                <div class="row text-center mt-0">
-                  <h2 class="h4 ng-binding">Don't have an account?</h2>
-                </div>
-                <div>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <a id="sign-up-link" class="btn btn-block btn-default ng-binding" role="button" href="#">Sign up for Spotify</a>
-                    </div>
-                  </div>
-                </div>
+      <div class="row_log_in">
+        <div class="col_log_in">
+          <div class="row_log_in">
+            <div class="col_log_in">
+              <div class="divider_login">
               </div>
             </div>
-          </signup>
+          </div>
+          <div class="row_log_in text-center">
+            <h2>Don't have an account?</h2>
+          </div>
+          <div>
+            <div class="row_log_in">
+              <div class="col_log_in">
+                <a id="sign-up-link" class="btn btn-block btn-default" role="button" href="#">Sign up for Musiqua</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</section>
+
 </body>
 </html>
