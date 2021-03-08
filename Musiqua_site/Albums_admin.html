@@ -9,10 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Css and fonts-->
-
-  <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
+  <link rel='stylesheet'  href='css/main.css' type='text/css' media='all' />
   <link rel='stylesheet'  href='css/album.css' type='text/css' media='all' />
-  <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/fonts.css" rel="stylesheet" type="text/css"  media="all" />
   <link href="font/FontAwesome/css/all.css" rel="stylesheet" type="text/css"  media="all" />
   <link rel='stylesheet'  href="http://fonts.googleapis.com/css?family=Open+Sans%7CLekton%7CPT+Sans%7CLibre+Baskerville%7CMontserrat%7CKarla%7CRaleway%7CLora%7CLato%7CMerriweather+Sans%7CAbel&amp;ver=154954535" type='text/css' media='all' />
 </head>
@@ -31,7 +30,7 @@
   </div>
   <!-- End preloader-->
 
-  <!-- Start header-->
+  <!-- ===============  START HEADER ================ -->
   <header class="header default">
     <div class=" left-part">
       <a class="logo" href="index.html">
@@ -39,7 +38,7 @@
       </a>
     </div>
 
-    <!-- ===============  NAVIGATION MENU User Library ================ -->
+    <!--   Navigation menu User Library -->
     <div class="middle-part">
       <div class="button" id="button-album" style="background-color: #BFC0C0">
         <div id="circle"></div>
@@ -54,7 +53,7 @@
         <a href="MyPlaylist.html">My playlists</a>
       </div>
     </div>
-    <!-- =============== END NAVIGATION MENU User Library ================ -->
+    <!-- end navigation menu User Library -->
 
     <div class="right-part">
       <nav class="main-nav">
@@ -66,7 +65,7 @@
       </nav>
     </div>
   </header>
-  <!-- End header-->
+  <!-- ===============  END HEADER ================ -->
 
   <!-- =============== START ALBUM CATALOG ================ -->
   <section class="aquraFilter paddingGrid albumFilter" id="album-wall" style="background-image: url('assets/img/wall1.png'); background-repeat:round">
@@ -81,13 +80,27 @@
                 <img width="270" height="270" src="assets/img/content/albumCover.png">
               </span>
               <span class="disk"></span>
-            </div><!-- END ALBUM ICON -->
+            </div><!-- end album icon -->
             <div class="name">
               <h3>Noon Xoxo</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div><!-- end name -->
           </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon albumIcon1">
               <span class="thumbs-album">
@@ -99,8 +112,22 @@
               <h3>Stunt Vibe</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon albumIcon2">
               <span class="thumbs-album">
@@ -112,19 +139,19 @@
               <h3>Strange Clouds</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
-            </div>
-          </li>
-          <li class="col-md-3 col-sm-3 col-xs-12">
-            <div class="album-icon albumIcon3">
-              <span class="thumbs-album">
-                <img width="270" height="270" src="assets/img/content/albumCover3.png">
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
               </span>
-              <span class="disk"></span>
-            </div>
-            <div class="name">
-              <h3>Natural Earth</h3>
-              <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
-              <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
 
@@ -139,8 +166,49 @@
               <h3>Natural Earth</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
+
+          <li class="col-md-3 col-sm-3 col-xs-12">
+            <div class="album-icon albumIcon3">
+              <span class="thumbs-album">
+                <img width="270" height="270" src="assets/img/content/albumCover3.png">
+              </span>
+              <span class="disk"></span>
+            </div>
+            <div class="name">
+              <h3>Natural Earth</h3>
+              <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
+              <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
+            </div>
+          </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon albumIcon2">
               <span class="thumbs-album">
@@ -152,8 +220,22 @@
               <h3>Strange Clouds</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon albumIcon1">
               <span class="thumbs-album">
@@ -165,8 +247,22 @@
               <h3>Stunt Vibe</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon">
               <span class="thumbs-album">
@@ -178,6 +274,19 @@
               <h3>Noon Xoxo</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div><!-- end name -->
           </li>
 
@@ -192,6 +301,19 @@
               <h3>Noon Xoxo</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div><!-- end name -->
           </li>
           <li class="col-md-3 col-sm-3 col-xs-12">
@@ -205,6 +327,19 @@
               <h3>Stunt Vibe</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
           <li class="col-md-3 col-sm-3 col-xs-12">
@@ -218,8 +353,22 @@
               <h3>Strange Clouds</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
+
           <li class="col-md-3 col-sm-3 col-xs-12">
             <div class="album-icon albumIcon3">
               <span class="thumbs-album">
@@ -231,11 +380,24 @@
               <h3>Natural Earth</h3>
               <p style="word-spacing:5px;"><i class="fas fa-microphone" style="font-size: 1rem"></i> Artist</p>
               <p style="word-spacing:10px;">20:40h - 2020</p>
+              <span class="edit">
+                <button type="submit" class="btn_op">
+                  <i class="fas fa-pen"></i>
+                </button>
+              </span>
+              <span class="operation">
+                <button type="submit" class="btn_op pad-right-sm green confirm_name">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button type="submit" class="btn_op red cancel_name">
+                  <i class="fas fa-times"></i>
+                </button>
+              </span>
             </div>
           </li>
         </ul>
-      </div><!-- end aqura-filter-cotent -->
-      <!-- end filter -->
+      </div>
+
     </div><!-- end container -->
   </section>
   <!-- =============== END ALBUM CATALOG ================ -->
