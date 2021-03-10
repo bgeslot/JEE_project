@@ -4,18 +4,22 @@ CREATE SCHEMA info_team01_schema;
 
 USE info_team01_schema;
 
-CREATE TABLE album (
-    id INT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    duration INT NOT NULL,
-    year INT,
-    cover blob
-);
+
 
 CREATE TABLE artist (
     id INT PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
     last_name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE album (
+    id INT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    id_artist INT NOT NULL,
+    duration INT NOT NULL,
+    year INT,
+    cover blob,
+    FOREIGN KEY (id_artist) REFERENCES artist (id)
 );
 
 CREATE TABLE genre (
@@ -37,9 +41,20 @@ CREATE TABLE song (
     FOREIGN KEY (id_artist) REFERENCES artist (id)
 );
 
+CREATE TABLE has (
+	id_song INT,
+    id_artist INT,
+    id_album INT,
+    PRIMARY KEY (id_song, id_artist, id_album),
+    FOREIGN KEY (id_song) REFERENCES song (id),
+	FOREIGN KEY (id_artist) REFERENCES artist (id),
+    FOREIGN KEY (id_album) REFERENCES album (id)
+);
+
 CREATE TABLE playlist (
     id INT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL
+    title VARCHAR(255) NOT NULL,
+    Nsongs INT
 );
 
 CREATE TABLE contain (
