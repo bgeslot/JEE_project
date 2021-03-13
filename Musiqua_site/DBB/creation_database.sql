@@ -34,11 +34,7 @@ CREATE TABLE song (
     duration INT,
     rate_top BOOLEAN,
     id_genre INT,
-    id_album INT,
-    id_artist INT,
-    FOREIGN KEY (id_genre) REFERENCES genre (id),
-    FOREIGN KEY (id_album) REFERENCES album (id),
-    FOREIGN KEY (id_artist) REFERENCES artist (id)
+    FOREIGN KEY (id_genre) REFERENCES genre (id)
 );
 
 CREATE TABLE has (
